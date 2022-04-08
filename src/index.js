@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 //ReactDOM이 내부 컴포넌트를 root 엘리먼트에 render
 ReactDOM.render(
   <React.StrictMode>
-    <App />ㅞㅡ 
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
