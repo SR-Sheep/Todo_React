@@ -38,7 +38,7 @@ class AddTodo extends React.Component{
                 <Grid container>
                     {/* Grid 의 xs,sm,md,lg,xl 속성에 숫자가 들어가면 너비를 12등분으로 나눈 값의 비율만큼 가로 길이가 차지됨
                         각 속성의 차이는 화면 크기의 차이이며, 각각 최소, 작음, 중간, 큼, 최대 이다. */}
-                    <Grid xs={11} md={11} item style={{paddingRight : 16}}>
+                    <Grid xs={12} md={11} item style={{paddingRight : 16}}>
                         <TextField
                             placeholder="Add Todo Here"
                             fullWidth
@@ -46,10 +46,11 @@ class AddTodo extends React.Component{
                             onKeyUpCapture={this.enterKeyEventHandler}
                             value={this.state.item.title}/>
                     </Grid>
-                    <Grid xs={11} md={1} item>
+                    <Grid xs={12} md={1} item>
                         <Button fullWidth 
                             color="secondary"
                             variant="outlined"
+                            size="large"
                             onClick={this.onButtonClick}>
                             +
                         </Button>
